@@ -29,3 +29,46 @@ select brand_name,
 row_number() over(partition by brand_name)
 from coffeebrandreview
 order by row_number() over(partition by brand_name) desc
+
+-- Roasters có nhiều brand name nhất
+select count(distinct(brand_name)), roasters from  coffeebrandreview
+group by roasters
+order by count(distinct(brand_name)) desc
+
+	
+-- Brand name theo type of roast
+select count(distinct(brand_name)), type_of_roast from  coffeebrandreview
+group by type_of_roast
+order by count(distinct(brand_name)) desc
+
+-- Brand name theo roaster_location
+select count(distinct(brand_name)), roaster_location from  coffeebrandreview
+group by roaster_location
+order by count(distinct(brand_name)) desc
+
+--Brand name theo origin
+select count(distinct(brand_name)), origin from  coffeebrandreview
+group by origin
+order by count(distinct(brand_name)) desc
+
+--Brand name theo price-per-100g
+select count(distinct(brand_name)), coffeebrandreview.price_per_100g 
+	from  coffeebrandreview
+group by coffeebrandreview.price_per_100g
+order by count(distinct(brand_name)) desc
+
+with cte as(	
+select max(price_per_100g), min(price_per_100g), avg(price_per_100g),
+	PERCENTILE_CONT(0.25) within group (order by price_per_100g) as Q1,
+	PERCENTILE_CONT(0.5) within group (order by price_per_100g) as Q2,
+	PERCENTILE_CONT(0.75) within group (order by price_per_100g) as Q3
+	from  coffeebrandreview),
+
+cte2 as(
+select (Q1 - 1.5*Q1) as min_value, (Q3 + 1.5*Q3) as max_value from cte)
+
+select count(price_per_100g), count(distinct(price_per_100g)) 
+from coffeebrandreview
+where (price_per_100g > (select max_value from cte2))
+or price_per_100g < (select min_value from cte2)
+--93, 47
