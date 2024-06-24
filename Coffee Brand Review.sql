@@ -75,9 +75,22 @@ or price_per_100g < (select min_value from cte2)
 --93, 47
 
 -- Number of reviews each year theo roasters, brand_name
-select extract(year from review_date), 
+select extract(year from review_date) as rating_year, 
 count(distinct(roasters)) as no_of_roasters, 
 count(distinct(brand_name)) as no_of_brandname
 from coffeebrandreview
 group by extract(year from review_date)
 order by extract(year from review_date)
+
+
+-- Các brand_name được review nhiều lần qua các năm
+with cte as(
+	select brand_name, type_of_roast, rating, review_date,
+row_number() over(partition by brand_name) as number_of_rating
+from coffeebrandreview)
+
+select brand_name, roasters, type_of_roast, price_per_100g, rating, review_date from coffeebrandreview
+where brand_name in (
+select brand_name from cte 
+where number_of_rating > 1)
+order by brand_name, review_date
