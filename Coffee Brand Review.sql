@@ -73,3 +73,8 @@ from coffeebrandreview
 where (price_per_100g > (select max_value from cte2))
 or price_per_100g < (select min_value from cte2)
 --93, 47
+
+-- Number of reviews each year
+select extract(year from review_date), count(*) from coffeebrandreview
+group by extract(year from review_date)
+order by extract(year from review_date)
