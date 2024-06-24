@@ -57,6 +57,7 @@ select count(distinct(brand_name)), coffeebrandreview.price_per_100g
 group by coffeebrandreview.price_per_100g
 order by count(distinct(brand_name)) desc
 
+-- check if there are outliers
 with cte as(	
 select max(price_per_100g), min(price_per_100g), avg(price_per_100g),
 	PERCENTILE_CONT(0.25) within group (order by price_per_100g) as Q1,
