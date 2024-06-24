@@ -74,7 +74,10 @@ where (price_per_100g > (select max_value from cte2))
 or price_per_100g < (select min_value from cte2)
 --93, 47
 
--- Number of reviews each year
-select extract(year from review_date), count(*) from coffeebrandreview
+-- Number of reviews each year theo roasters, brand_name
+select extract(year from review_date), 
+count(distinct(roasters)) as no_of_roasters, 
+count(distinct(brand_name)) as no_of_brandname
+from coffeebrandreview
 group by extract(year from review_date)
 order by extract(year from review_date)
