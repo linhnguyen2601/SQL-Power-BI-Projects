@@ -17,4 +17,4 @@ Q1: Where are coffee of brand name come from?
 2. Kakalove Cafe is the roaster that has the largest number of brand names under its umbrella with 91 brand name, followed by JBC Coffee Roasters with 80 and Paradise Roasters with 77. Kakalove Coffee is a Taiwanese roasters while JBC Coffee Roasters and Paradise Roasters are from the US.
 3. By rating,
 4. By type of roast, nearly three quarters of brand names are categorized as medium-light, while the next most popular category, light, is much lower at 16%. Nevertheless, the average rating among these category is slight.
-5. 
+5. There are brand names that have more than 1 roasters
