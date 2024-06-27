@@ -2,8 +2,8 @@
 
 ## Introduction and Data Background
 Overview of dataset, what's it about 
-The dataset comprises 1,245 reviews, covering 1,141 coffee brands from 294 roaster locations.
-The report shows where the coffee beans come from, in which countries roasters operate, which coffee brands received the best ratings, which ones are the most expensive.
+The dataset covers 1,245 reviews about 1,141 coffee brands from 294 roaster locations in the period from Nov 2027 - Nov 2022.
+The report shows where the coffee beans of each brand name come from, and roasters that as well as countries where roasters operate, which coffee brands received the best ratings, which ones are the most expensive.
 We can learn about customers' preferences, the types of coffee they prefer and highly rate, as well as their favorite aromas and flavors. 
 ## Objectives 
 There are two main objectives for this project:
