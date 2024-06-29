@@ -4,7 +4,9 @@
 The dataset covers 1,245 reviews of 1,141 coffee brands from 294 roaster locations during the period from November 2017 to November 2022. The report shows where the coffee beans of each brand come from, the roasters that serve each brand, and the countries where the roasters operate. It also highlights which coffee brands received the best ratings and which ones are the most expensive. Additionally, the dataset provides short descriptions and information about the aromas and flavors (mouthfeel) of each coffee brand.
 ## Objectives 
 There are two main objectives for this project:
+
 Objective 1: Effectively clean and transform the dataset to enable proper data analysis
+
 Objective 2: Unveil interesting and useful insights from the data, answering business questions and providing strategic recommendations
 ## Business Questions:
 Q1: Which brand names are rated highest?
