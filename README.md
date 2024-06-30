@@ -1,14 +1,17 @@
-# World Coffee Roaster Review Analysis || SQL & Power BI
+# ☕☕☕ World Coffee Roaster Review Analysis || SQL & Power BI
 
-## Introduction and Data Background
+![image](https://github.com/linhnguyen2601/World-Coffee-Roaster-Review-Analysis/assets/166676829/f5c11dec-2beb-4a0c-a3b3-866733caef7a)
+
+
+## 🍫 Introduction and Data Background
 The dataset covers 1,245 reviews of 1,141 coffee brands from 294 roaster locations during the period from November 2017 to November 2022. The report shows where the coffee beans of each brand come from, the roasters that serve each brand, and the countries where the roasters operate. It also highlights which coffee brands received the best ratings and which ones are the most expensive. Additionally, the dataset provides short descriptions and information about the aromas and flavors (mouthfeel) of each coffee brand.
-## Objectives 
+## 🍫 Objectives 
 There are two main objectives for this project:
 
 Objective 1: Effectively clean and transform the dataset to enable proper data analysis
 
 Objective 2: Unveil interesting and useful insights from the data, answering business questions and providing strategic recommendations
-## Business Questions:
+## 🍫 Business Questions:
 Q1: Which brand names are rated highest?
 
 Q2: What is the range of ratings these brand names are assessed on? Is there a relationship between ratings and prices?
@@ -29,7 +32,7 @@ Q9: How do the ratings of medium-light roasts compare to those of light roasts?
 
 Q10: How do the prices of coffee brands from different countries of origin compare?
 
-## Key Findings:
+## 🍫 Key Findings:
 1. Coffee beans of 60% of brand names originate from Ethiopia, Colombia, and Kenya. However, these beans are primarily roasted in the US (56.6%), Taiwan (31.53%), and Hawai'i (5.42%). Despite this, on average, roasting companies in these three countries are not rated as highly as those in Australia, England, and Kenya, which have fewer than two roasters included in this dataset.
 
 2. Kakalove Cafe is the roaster with the largest number of brand names under its umbrella, with 91 brands, followed by JBC Coffee Roasters with 80 and Paradise Roasters with 77. Kakalove Cafe is a Taiwanese roaster, while JBC Coffee Roasters and Paradise Roasters are based in the US.
