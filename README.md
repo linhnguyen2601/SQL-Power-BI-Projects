@@ -15,7 +15,6 @@ Objective 1: Effectively clean and transform the dataset to enable proper data a
 
 Objective 2: Unveil interesting and useful insights from the data, answering business questions and providing strategic recommendations
 
-## 🍫 
 ## 🍫 Business Questions:
 Q1: Which brand names are rated highest?
 
@@ -89,5 +88,9 @@ Q8: How do the ratings of medium-light roasts compare to those of light roasts?
    By type of roast, nearly three-quarters of brand names are categorized as medium-light, while the next most popular category, light, is much lower at 16%. However, the difference in average ratings among these categories is minor.
 
 **Lessions learned:**
-Always define business questions before jumping into building dashboards in Power BI. A clear and thorough list of business questions will help the data analyst avoid any omissions in examining the data. More data charts mean a longer report and more pages. People say when there is a problem, there will be a solution. Then you will have to find a way to shorten your report and reduce the number of pages with fewer charts. You could either revisit your business questions and discard those that are not necessary for the reader or apply more technical skills such as parameters or filters
+Always define business questions before jumping into building dashboards in Power BI. A clear and thorough list of business questions will help the data analyst avoid any omissions in examining the data. More data charts mean a longer report and more pages. 
+
+Recently I find the 3-30-300  rule is quite effective when it comes to building user-friendly dashboards. You can find here: https://www.youtube.com/watch?v=qM8jXKc9Qco.
+
+I will have to find a way to shorten my report and reduce the number of pages with fewer charts. I could either revisit my business questions and discard those that are not necessary for the reader or apply more technical skills such as parameters or filters. See you in my upgraded version of this analysis ^^ 
 
