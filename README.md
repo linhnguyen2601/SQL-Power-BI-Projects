@@ -2,6 +2,8 @@
 
 ![image](https://github.com/linhnguyen2601/World-Coffee-Roaster-Review-Analysis/assets/166676829/f5c11dec-2beb-4a0c-a3b3-866733caef7a)
 
+Datasource: FP20 Analytics Data Challenges: Challenge 16 — “World Roasters Review" 
+https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/fp20-analytics-may-2024
 
 ## 🍫 Introduction and Data Background
 The dataset covers 1,245 reviews of 1,141 coffee brands from 294 roaster locations during the period from November 2017 to November 2022. 
@@ -86,6 +88,8 @@ Q8: How do the ratings of medium-light roasts compare to those of light roasts?
 **8. Type of roast**
 
    By type of roast, nearly three-quarters of brand names are categorized as medium-light, while the next most popular category, light, is much lower at 16%. However, the difference in average ratings among these categories is minor.
+
+**For dashboard data validation**: I use SQL, you can check my sourcecode in this repository.
 
 **Lessions learned:**
 Always define business questions before jumping into building dashboards in Power BI. A clear and thorough list of business questions will help the data analyst avoid any omissions in examining the data. More data charts mean a longer report and more pages. 
